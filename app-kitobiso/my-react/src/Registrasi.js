@@ -18,6 +18,33 @@ function Registrasi(){
                 nama:${nama}
                 email:${email}
                 hp:${hp}`)
-    }
+    };
 
-}
+    return(
+        <form onSubmit={handleSubmit}>
+            <label>
+                Nama : 
+                <input type="text" value={nama} onChange={(e)=>setNama(e.target.value)}/>
+                
+            </label>
+
+            <label>
+                Email : 
+                <input type="text" value={email} onChange={(e)=>setEmail(e.target.value)}/>
+                
+            </label>
+        
+            <label>
+                Hp : 
+                <input type="text" value={hp} onChange={(e)=>setHp(e.target.value)}/>
+                
+            </label>
+
+            <input type="submit" value="Submit"/>
+
+        </form>
+    )
+
+};
+
+export default Registrasi;

@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Hello from './Hello';
 import Product from './Product';
+import Registrasi from './Registrasi';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <Hello nama="Valentino" pesan="mantap"/>
         <Hello/>
         <Product/>
-        <Registrasi/>
+       <Registrasi/>
       </header>
     </div>
   );
